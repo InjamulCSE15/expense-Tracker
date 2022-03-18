@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- // -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Favicon Link -->
+    <!-- Favicon Link --> 
     <link rel="shortcut icon" href="https://img.icons8.com/external-phatplus-solid-phatplus/64/ffffff/external-cost-development-phatplus-solid-phatplus.png" type="image/x-icon">
  
-
-    <title>Expense Tracker</title>
-
-    <!-- Required CSS -->
-    <link rel="stylesheet" href="/CSS/style.css">
-
-    <!-- Google Font Links -->
+    <!-- Google Font Links  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Expense Tracker App</title>
+  </head>
+  <body>
+    <h2>&nbsp;<i class="fa-solid fa-calculator"></i> Expense Tracker App</h2>
 
-</head>
-<body>
-    <h2><i class="fa-solid fa-calculator"></i> &nbsp; Expense Tracker App</h2>
     <div class="container">
-        <h4>Your Balance</h4>
-        <h1 id="balance">Tk. 0.00</h1>
-        <!-- Income & Expense -->
-        <div class="inc-exp-container">
-            <!-- Income part -->
-            <div>
-                <h4>Income</h4>
-                    <p id="money-plus" class="money plus">Tk. + 0.00</p>
-            </div>
-            <!-- Expense part -->
-            <div>
-                <h4>Expense</h4>
-                    <p id="money-minus" class="money minus">Tk. - 0.00</p>
-            </div>
+    <h4>Your Balance</h4>
+    <h1 id="balance">BDT: 0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money plus">+BDT 0.00</p>
         </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money minus">-BDT 0.00</p>
+        </div>
+      </div>
 
-        <h3>History</h3>
-        <ul id="list" class="list">
-            <li class="minus">Cash<span>- 400 Tk.</span><button class="delete-btn">X</button></li> 
-        
-        </ul>
+      <h3><i class="fa-solid fa-clock"></i> &nbsp;History</h3>
+      <ul id="list" class="list">
+ 
+      </ul>
 
-        <h3>Add New Transaction</h3>
-        <form id="form">
-            <div class="form-control">
-                <label for="text">Text</label>
-                <input type="text" id="text" placeholder="Enter text...">
-            </div>
-            <div class="form-control">
-                <label for="amount">Amount<br>(Negative for expense, Positive for income)</label>
-                <input type="number" placeholder="Enter amount..." id="amount">
-            </div>
-        </form>
-        <button class="btn">Add Transaction</button>
+      <h3><i class="fa-solid fa-list-ol"></i> &nbsp;Add New Transaction</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text"><i class="fa-solid fa-file-signature"></i> &nbsp;Transaction Name</label>
+          <input type="text" id="text" placeholder="Enter transaction name..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            ><i class="fa-solid fa-coins"></i> &nbsp;Amount <br />
+            (Negative - Expense, Positive - Income)</label
+          >
+          <input type="number" id="amount" placeholder="Enter amount..." />
+        </div>
+        <button class="btn"><i class="fa-solid fa-location-arrow"></i> &nbsp;Add Transaction</button>
+      </form>
     </div>
-
-    <!-- Footer -->
+    <!-- Footer --> 
     <footer>
         <h5> &copy; All Right Reserved 2022 - Injamul Alam</h5>
     </footer>
 
-    <script src="/JS/myJS.js"></script>
-</body>
+    <script src="/JS/appScript.js"></script>
+  </body>
 </html>
